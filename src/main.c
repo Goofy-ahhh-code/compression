@@ -66,6 +66,9 @@ int main(int argc, char *argv[]) {
      if (stringcmp(argv[1], "decompress") == 0) {
         decompress(string, argv[2]);
     }
+    else {
+        printf("incorrect usage");
+    }
 
     return 0;
 }
