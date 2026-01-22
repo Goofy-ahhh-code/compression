@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
     FILE *read = fopen(argv[2], "r");
     if (!read) return -1;
 
-    fscanf(read, "%s", string);
+    fscanf(read, " %[^\n]", string);
 
     if (stringcmp(argv[1], "compress") == 0) {
         compress(string, argv[2]);
