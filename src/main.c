@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
     if (stringcmp(argv[1], "compress") == 0) {
         compress(string, argv[2]);
     }
-     if (stringcmp(argv[1], "decompress") == 0) {
+    else if (stringcmp(argv[1], "decompress") == 0) {
         decompress(string, argv[2]);
     }
     else {
